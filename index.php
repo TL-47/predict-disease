@@ -60,9 +60,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <title>Disease Prediction</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <header>
+        <img src="assets/img/image1.jpg" alt="Logo" class="logo">
+        <h1>Disease Prediction</h1>
+    </header>
+
     <form id="predictionForm" method="post" action="index.php">
         <label for="age">Age:</label>
         <input type="number" id="age" name="age" required><br>
@@ -111,3 +116,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php endif; ?>
 </body>
 </html>
+
